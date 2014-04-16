@@ -12,7 +12,7 @@ Il documento finale è stato realizzato unendo diversi capitolo scritti in LaTeX
 Informazioni tecniche
 ---------------------
 
-* [Sito web del corso](https://www.google.com)
+* [Sito web del corso](http://www.math.unipd.it/~tapparo/TOS/index.html)
 
 
 Link di approfondimento
