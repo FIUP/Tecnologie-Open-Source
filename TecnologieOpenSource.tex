@@ -32,6 +32,7 @@
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage[titles]{tocloft}
+\usepackage{appendix}
 \hypersetup{%
     pdfborder = {0 0 0}
 }
@@ -85,6 +86,8 @@
 
 \renewcommand*\contentsname{Indice}
 
+\newcommand{\glossario}[1]{\textit{#1\ped{\ped{G}}}}
+
 %----------------------------------------------------------------------------------------
 %	BLANK DOCUMENT
 %----------------------------------------------------------------------------------------
@@ -100,8 +103,11 @@
 \tableofcontents
 \clearpage
 
-
 \input{capitolo-introduzione}
+
+\appendix
+
+\input{glossario}
 
 
 \end{document}
