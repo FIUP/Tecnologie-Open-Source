@@ -2,16 +2,77 @@
 
 Analizziamo la fase di decadenza degli hacker, qui entra in gioco Richard Stallman.
 
+\subsection{Bibliografia}
+
+\begin{itemize}
+
+\item Steven Levy: \textit{Heroes of the computer revolution};
+\item Sam Williams: \textit{Free as in Freedom (2.0): Richard Stallman and the free software revolution}
+
+\end{itemize}
+
 \subsection{Prime esperienze}
 
-Nasce a New York dove si forma dal punto di vista informatico, diventa un esperto di \glossario{Assembler}, di sistemi operativi e di editor di testo. Poi entra ad Harvard e si laurea in Fisica. Scopre in segreto un'affinità con la cultura hacker sviluppatasi al MIT. Venne assunto al MIT come programmatore di sistemi. Viene preso sotto l'ala protettiva di Richard Greenblatt e Bill Gosper, che gli fanno da mentore.
+Richard Stallman nasce a New York nel 1953 dove si forma dal punto di vista informatico, diventa un esperto di \glossario{Assembler}, di sistemi operativi e di editor di testo. Inizia con le prime esperienze nel centro scientifico di Manhattan, poi lo assumono e inizia a sviluppare programmi in Fortran per il calcolo numerico. Nel 1971 entra ad Harvard e si laurea in Fisica. Scopre in segreto un'affinità con la cultura hacker sviluppatasi al MIT. Venne notato da Russ Noftsker e in seguito assunto al MIT come programmatore di sistemi. Viene preso sotto l'ala protettiva di Richard Greenblatt e Bill Gosper, che gli fanno da mentore.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=50mm]{images/stallman.jpg}
+\caption{Richard Stallmann da giovane}
+\end{figure}
 
 \subsection{Emacs}
 
-Una delle prime cose che Stallman fece fu la creazione di \glossario{Emacs}. Inizialmente esso era un insieme di macro per \glossario{TECO}, che era una sorta di linguaggio per scrivere e non era assolutamente real-time. Creò dunque una sorta di editor dentro TECO. Guy Steele ebbe in seguito l'idea di fare un po' di ordine tra le macro (che erano diventate tantissime). Quest'opera fu continuata da Stallman, in modo da avere un insieme più omogeneo. Questo disordine non sarebbe dovuto replicarsi in futuro, bisognava evitare che ciascuno costruisse il proprio insieme di macro. Quindi si imposero delle restrizioni sulla redistribuzione delle macro. Questa condizione creò una sorta di comunità in cui i programmatori condividevano gli sforzi di programmazione ed evitavano la dispersione del lavoro. Questo fu il primo gruppo concreto di condivisione del software. Emacs è nato in questo modo, ma poi è stato ritradotto varie volte.
+Una delle prime cose che Stallman fece fu la creazione di \glossario{Emacs}. Inizialmente esso era pensato come un insieme di macro per \glossario{TECO}, utlilizzato da tutti, che era una sorta di linguaggio per scrivere e non era assolutamente real-time. Creò dunque una sorta di editor dentro TECO. Guy Steele ebbe in seguito l'idea di fare un po' di ordine tra le macro (che erano diventate tantissime). Quest'opera fu continuata da Stallman, in modo da avere un insieme più omogeneo. Questo disordine non sarebbe dovuto replicarsi in futuro, bisognava evitare che ciascuno costruisse il proprio insieme di macro. Stallman voleva fare qualcosa di ``sociale'', voleva andare un po' oltre e impedire ulteriori disordini. Quindi si imposero delle restrizioni sulle modifiche delle macro. Questa condizione creò una sorta di comunità in cui i programmatori condividevano gli sforzi di programmazione ed evitavano la dispersione del lavoro. Questo fu il primo gruppo concreto di condivisione del software e il primo mattone della nascita della GPL. Emacs è nato in questo modo, ma poi è stato ritradotto varie volte.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=20mm]{images/emacs.png}
+\caption{Il logo di emacs}
+\end{figure}
 
 \subsection{Le prime incursioni}
 
 Allo stesso tempo si iniziarono a vedere le prime debolezze. Il dipartimento di difesa obbligò gli hackers a programmare sui sistemi del dipartimento di \textit{computer science} del MIT, in cui c'era mancanza di accesso libero all'informazione. Arrivarono al punto di fare una sorta di ``sciopero'' nei confronto del laboratorio e bloccarono l'accesso alle succesive versioni di Emacs. Si creò dunque una frattura tra Richard Stallman e la comunità.
 
 Gli hackers cominciarono a migrare e andarono a lavorare altrove per altre società. Comparirono i primi programmi coperti da copyright nel campo dell'\textbf{intelligenza artificiale}.
+
+\subsection{La lisp machine e il collasso}
+
+Richard Greenblatt, un programmatore del MIT, era un'autorità nel settore. Aveva iniziato a giocare con le \glossario{lisp machine} (lisp era un linguaggio ad alto livello) e aveva avuto l'idea di creare una macchina che eseguisse lisp in modo più efficiente e sicuro. Creò una sorta di controllo all'interno di lisp per la gestione delle risorse, aveva modificato la struttura dell'hardware in modo che lisp venisse utilizzato più velocemente. Questo fu un grosso passo avanti, perchè programmare in lisp era molto più comodo che programmare in assembler. Alla lunga riuscì ad ottenere lo stanziamento di fondi per 6 macchine. Si arrivò a produrne 32. Anche per gli hacker era un mondo nuovo, perchè cambiava la visione classica (un solo computer disponibile), ora ogni persona aveva la propria macchina. Pensò dunque di collegare queste 32 macchine per favorire la condivisione. Il progetto è cresciuto a un punto tale che si trasformò in un azienda per la produzione di lisp machine, che in un certo senso era un'estensione del MIT. La visione di Greenblatt era quella di un'azienda \textit{``hacker friendly''}. Russel Noftsker non condivideva molto l'idea, era parte del progetto, ma la sua visione era incompatibile con quella di Greenblatt, pensava che l'azienda non sarebbe stata in grado di produrre grosse modifiche a livello globale.
+Nel 1979 si arriva al punto in cui il conflitto esplode (Greenblatt aveva dalla sua un caratteraccio, non teneva conto delle persone). Da un lato non si poteva ``far fuori Greenblatt'', ma dall'altro non c'erano molte persone che volessero continuare con la sua visione (Greenblatt voleva avere l'ultima parola), quindi in sostanza non esisteva un team. Perciò gli diedero un anno di tempo per fondare l'azienda, altrimenti gli altri avrebbero fondato la loro. Riuscì sorprendentemente a creare un'azienda che funzionasse, la \glossario{LMI}, ma dopo un anno gli altri suoi colleghi crearono \glossario{Symbolics}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=50mm]{images/greenblatt.jpg}
+\caption{Richard Greenblatt da giovane}
+\end{figure}
+
+\subsection{Lo svuotamento del MIT}
+
+LMI e Symbolics attingono pesantemente dal MIT (concorrenza). Nel 1982 Symbolics rende le proprie modifiche al sistema operativo delle lisp machines proprietario. A questo punto c'è un crollo della comunità, era già molto debole, erano rimasti pochi hackers ma c'era comunque un sistema complesso che andava mantenuto. 
+Quindi a un certo punto PDP divenne obsoleto e la comunità si ritrovò di fronte a un problema, bisognava creare una nuova macchina, era necessario prendere tutto il software delle macchine correnti e riscriverlo, e gli hackers non erano abbastanza numerosi. Alla fine si decise di comprare il sistema operativo proprietario di \glossario{Digital} e a partire da esso si creò \glossario{Twenex}, con caratteristiche molto diverse da un sistema standard (sicurezza costruita nel sistema). 
+Il gruppo wheel era un gruppo i cui programmatori erano gli unici che potevano divenire amministratori e apportare modifiche alla macchina. In seguito ci fu la nascita di GNU.
+
+\subsection{L'appello}
+
+nel 1983 Richard Stallman fece un appello su \texttt{net.unix-wizards}:
+
+\begin{center}
+
+\textit{``Starting this Thanksgiving I am going to write a complete Unix-compatible software system called GNU (for Gnu’s Not Unix), and give it away free to everyone who can use it. Contributions of time, money, programs and equipment are greatly needed''}.
+
+\end{center}
+
+Le ragioni della scelta di unix furono:
+
+\begin{itemize}
+
+\item Il monopolio della AT&T;
+\item La familiarità con il codice sorgente (e grosso utilizzo da parte delle università), c'era un grande numero di utilizzatori e di sviluppatori;
+\item La portabilità (sviluppato in C e non in assembler), sistema che si adattasse alle macchine, su architetture molto diverse.
+
+\end{itemize}
+
+\subsection{GNU Emacs}
+
