@@ -68,7 +68,7 @@ Le ragioni della scelta di unix furono:
 
 \begin{itemize}
 
-\item Il monopolio della AT&T;
+\item Il monopolio della AT\&T;
 \item La familiarità con il codice sorgente (e grosso utilizzo da parte delle università), c'era un grande numero di utilizzatori e di sviluppatori;
 \item La portabilità (sviluppato in C e non in assembler), sistema che si adattasse alle macchine, su architetture molto diverse.
 
@@ -76,3 +76,35 @@ Le ragioni della scelta di unix furono:
 
 \subsection{GNU Emacs}
 
+La prima cosa che serviva era un programma per eseguire il codice, quindi ci fu un grosso lavoro sul compilatore. Stallman parte dal codice di Gosling e scrive GNU Emacs. L'Emacs del MIT non andava bene, serviva una nuova versione che andasse bene per le macchine piccole. Si erano nel frattempo creati tutta una serie di \textit{cloni} di Emacs, una di quelle era scritta da James Gosling e quest'ultimo concedette a Stallman il codice senza problemi, dal quale potè creare una nuova versione.
+Unipress a quel punto minacciò legalmente Emacs (aveva acquistato la versione di Gosling), ma per fortuna di Stallman la versione era stata riscritta praticamente da zero, per cui non ebbe problemi e nel 1985 rilasciò ufficialmente il programma. 
+\linebreak
+\linebreak
+Stallman decise di pensare bene a una licenza per la versione, basandosi su GNU. La licenza era basata principalmente sulla licenza implicita della comunità Emacs. È il primo grosso progetto di GNU, che sotto sotto era una GPL. A partire da esso si svilupparono tutta un'altra serie di progetti, bisognava creare dunque una licenza che fosse comune a tutti. Gilmore suggerì dunque il cambio di nome e nacque la GNU general public license che venne distribuita in versione 1.0 con il rilascio di \glossario{gdb}.
+
+\subsection{L'incontro con BSD}
+
+AT\&T cominciò a focalizzarsi sull'utilizzo di Unix a scopo commerciale e nel frattempo si sviluppò BDS, una distribuzione di Unix derivata con scopi accademici e con diversi contributi esterni. L'idea era di trasformare i loro sistemi operativi \textit{batch} con una versione di Unix.
+Due studenti si erano appassionati e avevano reso una versione migliore di BSD, aggiungendo tutta una serie di cose, iniziando dapprima a effettuare modifiche esterne e poi interne. Quindi si formò una distribuzione indipendente, ma c'era la necessità della licenza AT\&T. Stallman convinse Bostic e i suoi a creare una versione completamente libera (all'inizio era un po' deficitaria ma col tempo si è messa in pari). A questo punto c'era un sistema operativo (e un kernel) libero.
+
+\subsection{Anni 80-90}
+
+Intorno alla costellazione GNU ci furono vari programmatori che iniziarono a rilasciare codice sotto licenza GPL. Bruce Perens rilascia \textit{electric fence} sotto licenza GPL, una libreria per le chiamate all'allocazione di memoria. Bruce Perens sarebbe diventato in seguito il project leader di Debian.
+\linebreak
+\linebreak
+GPL stava dunque divenendo una licenza molto importante. Rich Marin fonda \glossario{Prime Time Freeware}, un'azienda che rilascia software solo sotto GPL. L'azienda \glossario{Cygnus} con Micheal Tiemann aveva cominciato a lavorare al progetto \glossario{gcc}, aggiungendo il supporto al C++. Il progetto era quella di contribuire (fare modifiche) al gcc e poi rivenderlo. L'idea ebbe un notevole successo. Cygnus venne fondata nel 1990 e per la fine dell'anno valeva 725000\$ in supporto e contratti.
+
+\subsection{Espansione del progetto GNU}
+
+Il progetto GNU si espanse in modo molto rapido e virale. Di seguito vengono riportati i maggiori rilasci dei primi anni:
+
+\begin{itemize}
+
+\item gcc;
+\item Libc (1987);
+\item Bash (la shell), fileutils (gestione dei file), sh-utils, textutils (gestione dei testi);
+\item Ghostscript;
+\item Textinfo (formattazione della documentazione, l'html lo renderà obsoleto);
+\item Yakk, make, ...
+
+\end{itemize}
