@@ -13,21 +13,3 @@ Informazioni tecniche
 ---------------------
 
 * [Sito web del corso](http://www.math.unipd.it/~tapparo/TOS/index.html)
-
-
-Link di approfondimento
------------------------
-
-`TODO`
-
-Change log
-----------
-
-| Author              | Date           | Version | Description  |
-| -------------       |:-------------: | :-----: | :---------:  |
-| Luca De Franceschi | 2014-05-05 | 0.4.0 | Stesura del capitolo sulla storia del movimento open-source |
-| Luca De Franceschi | 2014-04-18 | 0.3.0 | Introdotto glossario |
-| Luca De Franceschi | 2014-04-16 | 0.2.2 | Modificato layout del documento |
-| Luca De Franceschi | 2014-04-16 | 0.2.1 | Corretto bug sul capitolo introduzione |
-| Luca De Franceschi  | 2014-04-13 | 0.2.0 | Stesura del capitolo introduzione |
-| Luca De franceschi | 2014-04-10 | 0.1.0 | Creato documento, impostato layout iniziale |
