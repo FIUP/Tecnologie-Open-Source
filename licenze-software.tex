@@ -138,3 +138,113 @@ Chiaramente questo valeva per tutti gli autori e le entità che avevano donato i
 
 \subsection{Apache license}
 
+La Licenza Apache è una licenza di software libero non copyleft scritta dalla \textbf{Apache Software Foundation} (ASF) che obbliga gli utenti a preservare l'informativa di diritto d'autore e d'esclusione di responsabilità nelle versioni modificate.
+
+Come ogni licenza di software libero, la licenza Apache consente agli utenti di usare il software per ogni scopo, di distribuirlo, modificarlo e di distribuire versioni modificate del software.
+
+La licenza Apache non richiede che versioni modificate del software siano distribuite secondo i termini della stessa licenza o come software libero, richiede solo che si includa un'informativa del fatto che si è utilizzato software licenziato secondo i termini della Licenza Apache.
+
+Quindi, a differenza di quanto accade con le licenze copyleft, gli utenti di versioni modificate del software licenziato secondo i termini della Licenza Apache non godono necessariamente delle suddette libertà o, considerando la situazione dal punto di vista del licenziatario, esso ha la libertà di utilizzare il software in ogni modo, anche in prodotti proprietari, a danno degli utilizzatori (vedi l'articolo 4).
+
+\subsubsection{Versioni}
+
+Ci sono state tutta una serie di versioni di questa licenza, che è cambiata dalla 1.0 fino alla 2.0. La \textbf{1.0} era una BSD a quattro clausole più una clausola di rinomina, che essenzialmente diceva che se si prendeva un prodotto che utilizzava del codice di Apache era necessario chiamare il prodotto in modo diverso da Apache. Questa clausola voleva ottenere l'effetto di evitare che il codice sorgente di Apache fosse la base di una miriade di web server diversi che utilizzavano quel codice lì, volevano evitare una frammentazione eccessiva, perchè sarebbe stato un danno per la comunità. 
+
+Nella versione \textbf{1.1} hanno modificato queste cose, hanno tolto la quarta clausola di BSD, la clausola di rinomina è rimasta, e hanno aggiunto una clausola pubblicitaria sulla documentazione; in pratica era necessario pubblicizzare nella documentazione il fatto che il codice si basasse sul prodotto Apache. 
+
+\begin{lstlisting}[caption=licenza Apache 1.1]
+
+ ====================================================================
+ The Apache Software License, Version 1.1
+
+ Copyright (c) 2000 The Apache Software Foundation.  All rights
+ reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+
+ 3. The end-user documentation included with the redistribution,
+    if any, must include the following acknowledgment:
+       "This product includes software developed by the
+        Apache Software Foundation (http://www.apache.org/)."
+    Alternately, this acknowledgment may appear in the software itself,
+    if and wherever such third-party acknowledgments normally appear.
+
+ 4. The names "Apache" and "Apache Software Foundation" must
+    not be used to endorse or promote products derived from this
+    software without prior written permission. For written
+    permission, please contact apache@apache.org.
+
+ 5. Products derived from this software may not be called "Apache",
+    nor may "Apache" appear in their name, without prior written
+    permission of the Apache Software Foundation.
+
+ THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
+ WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED.  IN NO EVENT SHALL THE APACHE SOFTWARE FOUNDATION OR
+ ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+ USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+ ====================================================================
+
+ This software consists of voluntary contributions made by many
+ individuals on behalf of the Apache Software Foundation.  For more
+ information on the Apache Software Foundation, please see
+ <http://www.apache.org/>.
+
+ Portions of this software are based upon public domain software
+ originally written at the National Center for Supercomputing Applications,
+ University of Illinois, Urbana-Champaign.
+
+\end{lstlisting}
+
+L'Apache 1.1 non è durata molto, in quanto è subentrata poi l'Apache \textbf{2.0}, che cambia completamente. Mentre dalla 1.0 alla 1.1 hanno cambiato un po' di clausole, con la 2.0 ci sono cambiamenti molto grandi, ed è la prima licenza che analizziamo che affronta il \textbf{problema dei brevetti}. L'idea fondamentale dell'Apache 2.0 è di affrontare il problema dei brevetti. La questione è che le licenze software libere erano state formate in un momento in cui la proprietà intellettuale significava copyright. Questo non era più vero, piano piano era divenuta sempre più pressante il \textbf{problema dei brevetti}. Non si è infatti obbligati a fornire delle licenze per i brevetti, è a discrezione del proprietario. Anche dentro Apache si sono posti dunque il problema di evitare che qualcuno potesse crearsi il proprio web server che aveva tutte le funzionalità di Apache, aggiungergi delle proprie funzionalità (algoritmi) delle quale possedeva i brevetti e reimmettere nel mercato questa nuova versione. Si impose dunque una clausola sui brevetti, in cui quando una persona contribuiva ad Apache forniva anche i propri brevetti. Era necessario di distinguere il concetto di \textbf{modifica} da quello di \textbf{contribuzione}. Si pensa al modello in cui c'è uno \textbf{sviluppo centralizzato}.	
+\linebreak
+\linebreak
+I due files che devono essere inclusi nella directory principale dei prodotti software distribuiti sono:
+
+\begin{itemize}
+
+\item \textbf{LICENSE} - una copia della licenza.
+\item \textbf{NOTICE} - un'``informativa'' testuale che elenca i nomi delle librerie licenziate che sono utilizzate, con i nomi degli sviluppatori. Nel codice redistribuito si deve preservare in ogni file licenziato qualsiasi informativa di diritto d'autore e di brevetti presente ed in ogni file modificato si deve aggiungere un'informativa specificando che il file è stato modificato.
+
+\end{itemize}
+
+\begin{lstlisting}[caption=licenza Apache 2.0]
+
+Copyright [yyyy] [name of copyright owner]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+\end{lstlisting}
+
+\subsubsection{Filosofia delle licenze BSD}
+
+Le licenze BSD sono fatte per permettere gli sfruttamenti proprietari. Vanno ovviamente nella direzione opposta di quella del mondo del software libero. In genere queste licenze ci sono quando si vuole creare uno standard, ma devono essere consistenti con l'obiettivo dei progetti che le scelgono (esempio X, BSD unix). Questo favorisce la massima diffusione del codice (originale o derivato). Le licenze copyleft hanno come obiettivo invece quello di impedire gli sfruttamenti proprietari. Non si può modificare la licenza in modo proprietario. 
+
+\subsection{GPL v2}
