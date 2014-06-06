@@ -1,0 +1,140 @@
+\section{Licenze software}
+
+\subsection*{Materiale di riferimento}
+
+\begin{itemize}
+
+\item \textit{Understanding Open Source and Free Software Licensing} - Andrew Laurent;
+\item \textit{Open Source Licensing: Software freedom and intellectual property law}.
+
+\end{itemize}
+
+\subsection{Capisaldi}
+
+Il diritto d'autore arriva fino a 70 anni dopo la morte. Al giorno d'oggi in realtà la grande maggioranza dei libri hanno un utilità che dura pochi anni da quando sono stati prodotti, a meno che non sia un grande classico o un best-seller. La protezione è espressa sotto forma percepibile, dev'essere qualcosa che uno ``ha creato''. Inoltre non c'è nessuna registrazione necessaria per avere il diritto d'autore. Un discorso a parte è il \textbf{work for hire}, ovvero quando qualcuno produce un'opera lavorando per qualcun altro. Quando si lavora come dipendenti, a meno di clausole particolari, tutto ciò che si produce è proprietà del datore di lavoro, viene ceduta la proprietà intellettuale del proprio lavoro all'azienda.  
+
+Una cosa che vedremo molto spesso sono le \textbf{garanzie}, perchè ogni copyright, soprattutto quelli open source, hanno una clausola che il più possibile cerca di raggiungere una certa forma di garanzia, in modo da non dover andare incontro a problematiche. Ci sono due tipi di garanzie:
+
+\begin{itemize}
+
+\item \textbf{Garanzie esplicite}, sono quelle che io do esplicitamente per cercare di rendere più appetibile la mia vendita; 
+
+\item \textbf{Garanzie implicite}, che di fatto sono ``forzate'' dalla legge; esempio garanzie di commerciabilità sui prodotti acquistati, o quelle di idoneità a un certo scopo.
+
+\end{itemize}
+
+\subsection{X License (MIT license)}
+
+È la licenza più basilare, licenza originale di X Windows. Essenzialmente permette di \textit{fare tutto}, libertà di modifica, di copia, di ridistribuzione del software. Il codice sorgente può essere redistribuito liberamente, senza restrizioni sul formato (ad esempio si può scegliere di redistribuirlo solo in forma binaria). Quello che è necessario è \textbf{mantenere la licenza originale}, in modo che la persona possa vedere la licenza con la quale è stato prodotto quel software. Ci sono naturalmente delle clausole di salvaguardia. 	
+
+\begin{lstlisting}[caption=Licenza MIT]
+
+Copyright (c) <year> <copyright holders>
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the ``Software''), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED ``AS IS'', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+\end{lstlisting}
+
+L'obiettivo è quello di \textbf{proteggere} chi ha scritto software sotto questa licenza, ecco perchè ci sono tutta una serie di garanzie, in questo modo si evitano problemi futuri dovuti alla redistribuzione. Qualunque tipo di garanzia possibile è \textbf{coperta}, anche se non sempre queste clausole sono valide, ad esempio potrebbero non essere validi in alcuni paesi. Ad ogni modo, nonostante queste garanzie, è una licenza che risulta comunque molto permissiva. 
+
+\subsection{Licenze BSD}
+
+Sono leggermente più restrittive rispetto alla licenza MIT. In realtà ce ne sono diverse:
+
+\begin{itemize}
+
+\item BDS a 4 clausole;
+\item BSD a 3 clausole;
+\item BSD a 2 clausole.
+
+\end{itemize}
+
+Storicamente si sono sviluppate in ordine decrescente, man mano hanno tolto una clausola perchè sostanzialmente creava dei problemi. La licenza BSD a quattro clausole si è dimostrata infatti inutilizzabile nella pratica, perchè diveniva ingestibile tenere conto di tutti gli autori del software. 
+
+\subsubsection{BDS a due clausole}
+
+È la licenza di \textbf{NetBSD} e di fatto corrisponde alla MIT license, con l'aggiunta dell'obbligo di inserire la documentazione anche nella redistribuzione.
+
+\begin{lstlisting}[caption=BSD a due clausole (NetBDS)]
+
+
+Copyright (c) 2008 The NetBSD Foundation, Inc.
+All rights reserved.
+
+This code is derived from software contributed to The NetBSD Foundation
+ by 
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+ THIS SOFTWARE IS PROVIDED BY THE NETBSD FOUNDATION, INC. AND CONTRIBUTORS
+ ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+ TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS
+ BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+
+ \end{lstlisting}
+
+ Essenzialmente si può pensarla come una licenza BSD in cui nella distribuzione in forma binaria bisogna mantenere tutta la documentazione e la licenza. 
+
+ \subsubsection{BSD a tre clausole}
+
+ La BSD a tre clausole ha un'impostazione un po' più innovatoria. Si tratta comunque di una licenza molto ``generosa'', non sono per nulla invasive. Comprende le due clausole precedenti più la seguente:
+
+ \begin{lstlisting}[caption=BSD a tre clausole]
+
+3. Neither the name of the <organization> nor the
+   names of its contributors may be used to endorse or promote products
+   derived from this software without specific prior written permission.
+
+\end{lstlisting} 
+
+In pratica permette di ``fare quello che si vuole'' però non è possibile farsi pubblicità usando il nome del copyright holder a meno che non si abbia un permesso. Ad esempio non si può dire ``il mio software è più sicuro perchè è sotto licenza BSD''. È una delle licenze più comuni nei sistemi BSD, non crea nessun problema, ed è approvata dalla OSI.
+
+\subsubsection{BSD a quattro clausole}
+
+Ma la licenza originale di BSD unix aveva un'altra clausola che era molto più invasiva. Aveva le stesse clausole già viste, in più:
+
+\begin{lstlisting}[caption=BSD a quattro clausole] 
+
+4. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   This product includes software developed by the <organization>.
+
+\end{lstlisting}
+
+Chiaramente questo valeva per tutti gli autori e le entità che avevano donato il codice, quindi diventava un po' problematico riportarli tutti, tanto è vero che non è stata approvata dalla OSI. Un problema più serio è che non è compatibile con la GPL perchè questa clausola aggiuntiva non è prevista dalla GPL. Quindi se si voleva cambiare la licenza del prodotto a GPL si riscontravano grossi problemi in quanto si dovrebbe togliere questa clausola. Da un punto di vista pratico era inoltre molto problematico dover tener traccia di tutti gli autori (gli indirizzi email per esempio possono cambiare nel tempo).
+
+\subsection{Apache license}
+
