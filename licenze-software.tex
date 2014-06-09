@@ -248,3 +248,40 @@ limitations under the License.
 Le licenze BSD sono fatte per permettere gli sfruttamenti proprietari. Vanno ovviamente nella direzione opposta di quella del mondo del software libero. In genere queste licenze ci sono quando si vuole creare uno standard, ma devono essere consistenti con l'obiettivo dei progetti che le scelgono (esempio X, BSD unix). Questo favorisce la massima diffusione del codice (originale o derivato). Le licenze copyleft hanno come obiettivo invece quello di impedire gli sfruttamenti proprietari. Non si può modificare la licenza in modo proprietario. 
 
 \subsection{GPL v2}
+
+\subsubsection{Le basi}
+
+La licenza GPL permette la libera copia non modificata, a patto di mantenere le licenze e le clausole di salvaguardia intatte. I prodotti derivati devono essere essi stessi sotto GPL. Questa è la base, ma in verità è una licenza che è stata molto modificata negli anni. La prima cosa che uno potrebbe fare e prendere il programma e distribuirlo (copiarlo), purchè mantenga le licenze e la clausole. Diverso è se io prendo la distribuzione dei sorgenti e li modifico. In questo caso la GPL prevede tutta una serie di clausole sia per la tutela dell'autore originale del software che per gli stessi utenti finali di quel software. L'obbligo è di inserire in ogni singolo file modificato degli avvisi di modifica, spesso nell'intestazione del codice, in modo che chiunque possa vedere quali modifiche sono state fatte, in modo che se sorgono problemi sia identificabile il responsabile. La seconda cosa che si deve fare è mettere il risultato finale sotto GPL. Per sorgenti si intende i file che vengono compilati, gli script utilizzati e il software che viene utilizzato (ad esempio compilatori, dipendenze varie, ...). Un'ulteriore clausola è che eventuali avvisi interattivi sulla licenza devono rimanere. Per esempio ci sono alcuni programmi che quando vengono lanciati mostrano un \textit{pop-up}, o degli avvisi con alcune informazioni, ad esempio le clausole di salvaguardia. Questo deve rimanere. 
+
+\subsubsection{Restrizione sulla distribuzione di binari}
+
+Maggiori restrizioni vi sono sulla modifica e redistribuzione dei file binari. Essi devono obbligatoriamente essere \textbf{accompagnati dai relativi file sorgenti}. L'accesso ai file sorgenti dev'essere libero, senza penalizzazioni. La seconda opzione è di fornire un'offerta scritta in cui ognuno può ottenere i sorgenti per almeno tre anni. L'offerta scritta ha chiaramente un costo, nel momento in cui io mando il cd con i sorgenti a qualcuno devo poter farlo pagare, quindi sostanzialmente faccio pagare la spedizione, il che non comporta costi eccessivi. La terza possibilità consiste nell'informare dove stanno i file sorgenti (sul web presumibilmente), dove poterli prelevare. Questo è possibile solamente per distribuzioni non commerciali.  
+
+\subsubsection{Cosa sono i sorgenti?}
+
+È chiaro che senza una \textbf{definizione formale} di cosa siano i file sorgente si fa presto a incappare in errori. Tutto quello che in qualche modo \textit{interagisce} con il programma dev'essere fornito sotto GPL. 
+
+\begin{itemize}
+
+\item Sorgenti per tutti i \textbf{moduli} del programma;
+
+\item Tutti gli \textbf{script} e tutto quanto necessario per la compilazione, ad esempio \textit{Makefile}, parser, linker, compilatori aggiuntivi, ... In sostanza tutto ciò che serve per far partire il programma;
+
+\item \textbf{Eccezione} di quanto normalmente distribuito con il nucleo del sistema operativo. L'idea era: uno compila sotto ambiente Microsoft, usando il suo Visual C++ o altro che fa parte del sistema operativo, di quello cose allora non deve distribuire il binario. Non era molto chiara come clausola, non si capiva fin dove bisognava arrivare.
+ 
+\end{itemize}
+
+Una clausola importante è stata istituita per risolvere il problemi del rapporto tra autore originale e utilizzatore finale: chi riceve una copia del sorgente ottiene anche una \textbf{licenza d'uso} anche dal concessore originale. Automaticamente si è in grado di punire ogni violazione, se si è interessati a farlo. Chiaramente non risolve completamente il problema perchè non tutto il grafo di distribuzione è in grado di perseguire una violazione, solamente la sotto-catena che va dal distributore originale a quello finale; ma quello che conta è l'autore originale che detiene gran parte dell'interesse sul prodotto. In questo modo si evitava che qualcuno prendesse del software da uno sviluppatore ``piccoletto'' che a quel punto sarebbe stato tagliato fuori. 
+\linebreak
+\linebreak
+Un'ulteriore clausola è quella della cosiddetta \textit{``libertà o morte''}, pensata soprattutto per i brevetti; già allora c'era la consapevolezza che il problema dei brevetti era importante. Questa clausola dice essenzialmente che se si distribuisce un software però vi sono altre cause esterne che impediscono i diritti allora il software non può essere distribuito. Ad esempio se una legge impedisce di distribuire il codice sorgente, l'intero software protetto da GNU GPLv2 non può essere distribuito. La speranza è quella di rendere meno allettante per le imprese il ricorso alle minacce di brevetto, ovvero esigere un corrispettivo da parte degli sviluppatori di software libero.
+
+\subsubsection{LGPL v2.1}
+
+
+
+
+
+
+
+
