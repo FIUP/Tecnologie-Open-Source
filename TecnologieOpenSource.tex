@@ -44,6 +44,10 @@
 
 \newcommand*{\plogo}{\fbox{$\mathcal{PL}$}} % Generic publisher logo
 \usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{ragged2e}
+
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -57,26 +61,30 @@
 \rule{\textwidth}{0.4pt}\par % Thin horizontal line
 
 \vspace{\drop} % Whitespace between the top lines and title
-\centering % Center all text
+\begin{center} % Center all text
 \textcolor{Black}{ % Red font color
 {\Huge Appunti}\\[0.5\baselineskip] % Title line 1
 {\Large di}\\[0.75\baselineskip] % Title line 2
 {\Huge Tecnologie Open Source}} % Title line 3
+\\[2\baselineskip]
+{\Large \version{}}
 
 \vspace{0.25\drop} % Whitespace between the title and short horizontal line
-\rule{0.3\textwidth}{0.4pt}\par % Short horizontal line under the title
+\rule{1\textwidth}{0.4pt}\par % Short horizontal line under the title
 \vspace{\drop} % Whitespace between the thin horizontal line and the author name
 
-{\Large Luca De Franceschi}\par % Author name
-
+\end{center}
 \vfill % Whitespace between the author name and publisher text
-{\large Università degli studi di Padova}\par % Publisher
+\vfill
+{\large Luca De Franceschi}
+\hfill
+{\large Università degli studi di Padova}
 
-\vspace*{\drop} % Whitespace under the publisher text
 
-\rule{\textwidth}{0.4pt}\par % Thin horizontal line
-\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
-\rule{\textwidth}{1pt}\par % Thick horizontal line
+
+%\rule{\textwidth}{0.4pt}\par % Thin horizontal line
+%\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
+%\rule{\textwidth}{1pt}\par % Thick horizontal line
 
 \endgroup}
 
@@ -108,21 +116,53 @@
 }
 
 \renewcommand{\lstlistingname}{Listato}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\newcommand{\changefont}{%
+    \fontsize{5}{7}\selectfont
+}
+
 
 %----------------------------------------------------------------------------------------
-%	BLANK DOCUMENT
+%	CONSTANTS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\version}{v0.8.0}
+
+\newcommand{\authorName}{Luca De Franceschi}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT HEADER
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-\raggedright
+\justifying
 \titleAT % This command includes the title page
-\thispagestyle{empty}
+\pagestyle{empty}
 \newpage
-
-\pagenumbering{arabic}
 
 \tableofcontents
 \clearpage
+
+%----------------------------------------------------------------------------------------
+%	HEADER FORMAT
+%----------------------------------------------------------------------------------------
+
+\fancyhf{}
+\fancyhead[RE]{\small\scshape\nouppercase{\leftmark}}
+\fancyhead[LO]{\small\scshape\nouppercase{\rightmark}}
+\fancyhead[LE,RO]{\small\thepage}
+\lhead{\rightmark}
+\rhead{\leftmark}
+\rfoot{\thepage/\pageref{LastPage}}
+\lfoot{\authorName}
+
+\pagestyle{fancy}
+
+
+%----------------------------------------------------------------------------------------
+%	CONTENT
+%----------------------------------------------------------------------------------------
 
 \input{capitolo-introduzione}
 \clearpage
