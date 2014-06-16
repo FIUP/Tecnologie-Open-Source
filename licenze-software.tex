@@ -358,3 +358,72 @@ Un terzo problema era quello legato ai \textbf{brevetti software}, problema molt
 La GPL v3 aveva dunque lo scopo di affrontare tutti questi problemi che la GPL v2 si era dimostrata incapace di affrontarli. 
 
 \subsubsection{Brevetti software: la teoria}
+
+Vediamo la legislazione corrente riguardo ai brevetti:
+
+\begin{lstlisting}
+
+European pattern shall be granted for any inventions which are susceptible of industrial application, which are new and which involve an intentive step.
+
+The following in particular shall not be regrated as inventions within the meaning of paragraph 1:
+
+  - discoveries, scientific theories and mathematical methods;
+  - (b) aestethic creations;
+  - (c) schemes, rules and methods for allperforming mental acts, playing games or doing business, and programs for computers;
+  - (d) presentations of information.
+
+The provisions of paragraph 2 shall exclude patentability of the subject-matter or activities referred to in that provision only to the extent to which a European patent application or European patent relates to such subject-matter or activities as such.
+
+Methods for treatment of the human or animal body by surgery or therapy and diagnostic methods practised on the human or animal body shall not be regarded as inventions which are susceptible of industrial application not apply to products, in particular substances or compositions, for use in any of these methods.
+
+\end{lstlisting}
+
+\subsubsection{Brevetti software: la realtà}
+
+\begin{lstlisting}
+
+Disclosed is a method of implementing a preview window in an object oriented programming system that includes an application having at least a first panel and a second panel that are selectively displayable on a display screen. The second panel displays underlying information and the first panel displays an abbreviated representation of the underlying information. In the present invention, the user can temporarily display a preview window that contains undelying information while viewing the first panel.
+
+\end{lstlisting}
+
+Questo è un piccolo esempio di brevetto software. L'EPO ha già assegnato 3000 brevetti al software.
+
+\subsubsection{GPL v3 e brevetti software}
+
+I brevetti software sono un \textbf{problema} per la GPL. Il problema è che i brevetti sono molto diffusi e nel campo del software sono molto generali e tendono a coprire molte cose. Questo creava dei prodotti software che in teoria erano liberi ma che nella pratica non lo erano, magari involontariamente. Ogni software violava qualche brevetto anche senza che lo sviluppatore lo sapesse. È inoltre anche difficile consultare i brevetti che potrebbero impattare il proprio software (pensare ad esempio a dover vedersi tutti i brevetti per sviluppare un programma su Qt).
+
+Una possibile soluzione potrebbe essere rilasciare codice libero ma protetto da brevetti, ma non è la soluzione migliore chiaramente. La soluzione si ha con la GPL v3 che afferma che quando si rilascia un programma sotto questa licenza si \textbf{concede l'uso di brevetti} utilizzati dalla propria versione del programma. Questa è una delle grosse modifiche.
+
+\subsubsection{Tivoizzazione}
+
+Si stavano creando delle \textbf{chiavi} che bloccavano la modifica del software e che venivano verificate (blocchi del firmware). Questo era chiaramente un problema. La soluzione la si è trovata con la GPL v3, in cui si afferma che chi distribuisce apparecchi datati di software licenziato sotto la GNU GPL v3, deve includere nella distribuzione del codice sorgente tutte le informazioni necessaire - ivi incluse per esempio le chiavi digitali necessarie - per compilare una versione del codice modificato pienamente funzionante sull'hardware distribuito. Questa cosa non si applica all'interno di dispositivi industriali in cui il fatto che nessuno possa modificare il programma è una componente importante.
+
+\subsubsection{GPL v3 e DMCA/EUCD}
+
+Secondo DMCA/EUCD era \textbf{illegale rimuovere una misure di protezione digitale sul software}. La soluzione adottata fu la seguente: quando viene rilasciato del software sotto GPL v3 si afferma di non considerare le proprie modifiche come protezioni digitali proteggibili. Dal punto di vista del programmatore questo dà una completa libertà, in questo modo non può esser fatta causa all'autore.
+
+
+\subsubsection{Altri aspetti della GPL v3}
+
+Vediamo gli ulteriori miglioramenti. Una prima cosa è che si volle \textbf{internazionalizzare} la licenza, ovvero renderla valida in modo più forte in tutto il mondo. Il linguaggio ufficiale rimane l'inglese, non vi è una traduzione della licenza ma la licenza è stata adattata ai diversi sistemi legali dei vari stati. In questo modo non c'erano ambiguità relative alla nazionalità. 
+
+Nei diversi paesi il significato attribuito a diversi termini cambia. C'era il rischio che in diversi paesi il termine standard che normalmente veniva assegnato a una certa parola non avesse tutti i requisiti che si voleva che avesse nella GPL. Questo poteva portare a dei buchi dentro i quali si poteva entrare e violare la licenza, e questo voleva essere evitato. Per risolvere questo è stato utilizzato un \textbf{linguaggio neutrale} e più compatibile rispetto ai diversi sistemi giuridici, dando una definizione iniziale a tutti i termini utilizzati.
+
+Altri miglioramenti sono i seguenti:
+
+\begin{itemize}
+
+\item Supporto dei lavori su commissione;
+\item Possibile distribuzione via internet, in particolare via torrent;
+\item Compatibilità con AGPL3;
+\item Migliore compatibilità con altre licenze:
+  \begin{itemize}
+  \item Possibile aggiungere permessi aggiuntivi al proprio codice;
+  \item Possibile aggiungere da un insieme limitato di restrizioni aggiuntive.
+  \end{itemize}
+
+\end{itemize}
+
+\subsubsection{Affero GPL 3}
+
+La Affero GPL è molto simile alla GPL eccetto per il fatto che ha una sezione aggiuntiva che si riferisce all'utilizzo del software su una rete di calcolatori. Tale sezione richiede che il codice sorgente, se modificato, sia reso disponibile a chiunque utilizzi l'opera sulla rete. Il codice da fornire non sarà solo quello coperto da AGPL, ma anche tutti i moduli da esso utilizzati (escluse naturalmente le librerie di sistema). Come quasi tutte le licenze, la AGPL proibisce la rimozione della licenza stessa. La Free Software Foundation raccomanda questa licenza per ogni software che sia comunemente pensato per applicazioni web e che in generale siano rese disponibili su una rete. La AGPL non è compatibile con la GPL 2.0 perché la sezione 13 rientra nella definizione di ``restrizioni aggiuntive'' fornita dalla vecchia versione della GPL. È però pienamente compatibile con la GPL 3.0, grazie a una sezione appositamente inserita in essa.
