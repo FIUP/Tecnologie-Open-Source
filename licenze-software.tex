@@ -303,7 +303,7 @@ type `show w'.  This is free software, and you are welcome
 to redistribute it under certain conditions; type `show c' 
 for details.
 
-/*
+*/
 
 Yoyodyne, Inc., hereby disclaims all copyright
 interest in the program `Gnomovision'
@@ -317,9 +317,44 @@ Ty Coon, President of Vice
 
 \subsubsection{LGPL v2.1}
 
+Esiste una versione leggermente modificata della GPL, la \textbf{GNU Lesser/Library General Public License} o più semplicemente \textbf{LGPL}, pensata per le librerie. Essenzialmente mentre la GPL richiede che tutti i moduli che utilizzano quel programma vengano forniti sotto licenza GPL, la LGPL permette di più. In questo caso il progetto GNU voleva offrire una scelta, e questa scelta è stata una versione della GPL indebolita che permetta ad altri programmi di utilizzare la libreria ma allo stesso tempo non permettere che la parte GPL della libreria venisse modificata in modo proprietario. Ci sono varie clausole a questa licenza:
 
+\begin{itemize}
 
+\item Il software modificato dev'essere una \textbf{libreria} (anche se è una clausola non molto rispettata);
+\item Bisogna fare uno sforzo ragionevole per evitare di rendere necessarie tabelle o dati esterni non distribuiti;
+\item Le normali clausole della GPL.
 
+\end{itemize}
 
+È sempre previsto che un programma che sia sotto LGPL possa \textit{traghettare} e diventare GPL. La GPL infatti vuole poter racchiudere il massimo numero di programmi possibile sotto di essa.
 
+La caratteristica cruciale della LGPL è la possibilità di linkare il programma con la libreria scegliendo la propria licenza, a patto che:
 
+\begin{itemize}
+
+\item Sia permesso il \textbf{reverse engineering}, ovvero il fatto di poter comprendere ed analizzare il programma e di poter partire da esso per sviluppare una nuova versione;
+\item Sia distribuito il codice sorgente originale della libreria insieme ai file oggetto del resto del programma;
+\item Oppure si utilizzi un linking dinamico.
+
+\end{itemize}
+
+\subsection{Filosofia delle licenze copyleft}
+
+Passiamo ora ad analizzare le licenze copyleft pure. Essenzialmente partono con uno scopo ``sociale'', ovvero garantire la massima libertà agli utenti, agli utilizzatori. Hanno lo scopo di favorire uno \textbf{sviluppo comunitario} di molte persone e aziende che lavorano insieme su una base paritaria e con tutta una serie di garanzie in comune. Ciascuno crea e contribuisce e allo stesso tempo ha la garanzia che il resto della comunità faccia altrettanto. Un'altra ragione per la quale la GPL si è dimostrata molto buona è stata il \textbf{rapporto con le imprese}, perchè chiaramente un'azienda che distribuisce codice sotto GPL ha delle garanzie nei confronti dei concorrenti, sanno che i loro rivali non possono prendere il prodotto e farne uno proprietario senza condividere il codice, al massimo possono prendere il codice e costruire un altro prodotto GPL, ma non è molto ragionevole come idea, ben più sensato sarebbe contribuire insieme allo sviluppo: invece di fare due prodotti concorrenti ne si fa uno migliore in due, per esempio. Questa realtà sarebbe molto più difficile se l'azienda rilasciasse il prodotto sotto ad esempio licenza BSD. La GPL dà la garanzia di un \textbf{rapporto paritetico}. 
+
+La GPL non va molto bene in alcuni settori, per esempio quando si vuole creare uno standard. Le licenze copyleft vanno bene quando si vuole creare uno sviluppo comunitario oppure quando si vuole esternalizzare una parte del proprio lavoro. 
+
+\subsection{GPL v3}
+
+È una licenza copyleft molto importante, fatta di recente e che presenta diverse innovazioni per il progetto GNU, il quale non aveva fino ad allora la capacità di coinvolgere una comunità attorno al proprio software. La comunità era molto debole. Bisognava cercare di creare una licenza che fosse il più comunitaria possibile la quale potesse essere discussa dalle persone. Inizialmente fu proposta una licenza iniziale. Venne poi creato un'interfaccia con la quale gli sviluppatori potevano fare proposte sulle singole linee della licenza. Era vitale capire gli interessi delle varie anime della comunità e cercare di fare il meglio per rappresentarle tutte nel miglior modo possibile. In questo modo si andava incontro a tutte le perplessità degli sviluppatori. La GPL v3 ha introdotto diverse modifiche e risolto diversi problemi della versione precedente. 
+
+Il primo problema grosso era la \textbf{tivoizzazione}, legato alla distribuzione del \textbf{TiVo}, un apparecchio che si attacca alla TV e con il quale è possibile registrare i film in alta definizione. Questo chiaramente comporta delle problematiche per i produttori di film, dvd, ecc. Una soluzione che si cercò fu quella di impedire il trasferimento su memoria esterna dal TiVo. Il sistema operativo su cui si appoggiava il TivVo era però Linux, del quale era possibile modificare il kernel, quindi c'era la possibilità di modificare il kernel e permettere il trasferimento. A questo problema si rispose mettendo dunque un controllo nel firmware con un controllo crittografico. In questo modo se il kernel veniva modificato l'apparecchio non partiva e veniva bloccato. Questa cosa ad alcuni andava bene, ma ad altri no. Questo è stato uno dei primi momenti in cui c'è stato uno scisma fra la comunità open-source e la comunità del software libero. La comunità open-source, che è interessata principalmente al software libero come modo per favorire l'interazione con lo sviluppo di un software in modo più efficiente, non aveva grossi problemi con questo blocco per l'utilizzatore finale, dal momento che comunque il kernel era modificabile. La comunità del software libero, al contrario, non era molto permissivo su questo, percepiva il rischio di avere una tivoizzazione completa dell'hardware. Quelli erano anni in cui sempre più periferiche erano bloccate in quel modo.
+
+L'altro problema erano due leggi: la \textbf{Digital Millenium Copyright} (\textbf{DRM}) e la \textbf{Act/European Union Copyright Directive}, due leggi create per soccombere a problemi di programmi che miravano alla sicurezza. Secondo queste leggi non era possibile e non era legale prendere un programma e modificarlo in modo da rimuovere una misura di protezione digitale (esempio firmware che impediscono i DVD copiati). Anche questo poneva un problema per la GPL.
+
+Un terzo problema era quello legato ai \textbf{brevetti software}, problema molto grave che sussiste tuttora, anche se negli ultimi anni l'aria è un po' cambiata, anche se il problema legale c'è sempre. Il problema è che c'è la possibilità di brevettare degli algoritmi matematici, se un programma che è sotto GPL utilizza quell'algoritmo di fatto viene bloccato e non reso disponibile. Il fatto che il programma che era libero dovesse rimanere libero veniva aggirato in questo modo. Con la GPL v2 il problema dei brevetti era un problema molto sentito, ora è invece molto importante. 
+
+La GPL v3 aveva dunque lo scopo di affrontare tutti questi problemi che la GPL v2 si era dimostrata incapace di affrontarli. 
+
+\subsubsection{Brevetti software: la teoria}
