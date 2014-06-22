@@ -415,15 +415,105 @@ Altri miglioramenti sono i seguenti:
 
 \item Supporto dei lavori su commissione;
 \item Possibile distribuzione via internet, in particolare via torrent;
+\item Possibile depositare il codice sorgente su un server e lasciare l'accesso senza dover creare un contratto, l'importante è che binari e sorgenti siano accedibili allo stesso modo;
 \item Compatibilità con AGPL3;
 \item Migliore compatibilità con altre licenze:
+
   \begin{itemize}
   \item Possibile aggiungere permessi aggiuntivi al proprio codice;
-  \item Possibile aggiungere da un insieme limitato di restrizioni aggiuntive.
+  \item Possibile aggiungere da un insieme limitato di restrizioni aggiuntive, in modo da agevolare la compatibilità con altre licenze.
   \end{itemize}
 
 \end{itemize}
 
 \subsubsection{Affero GPL 3}
 
-La Affero GPL è molto simile alla GPL eccetto per il fatto che ha una sezione aggiuntiva che si riferisce all'utilizzo del software su una rete di calcolatori. Tale sezione richiede che il codice sorgente, se modificato, sia reso disponibile a chiunque utilizzi l'opera sulla rete. Il codice da fornire non sarà solo quello coperto da AGPL, ma anche tutti i moduli da esso utilizzati (escluse naturalmente le librerie di sistema). Come quasi tutte le licenze, la AGPL proibisce la rimozione della licenza stessa. La Free Software Foundation raccomanda questa licenza per ogni software che sia comunemente pensato per applicazioni web e che in generale siano rese disponibili su una rete. La AGPL non è compatibile con la GPL 2.0 perché la sezione 13 rientra nella definizione di ``restrizioni aggiuntive'' fornita dalla vecchia versione della GPL. È però pienamente compatibile con la GPL 3.0, grazie a una sezione appositamente inserita in essa.
+È una possibile variante della GPL in cui valgono le medesime condizioni della GPL v3 con l'aggiunta della condizione che se io metto a disposizione il software su un server per l'utilizzo da parte di terzi devo mettere a disposizione anche un link al codice sorgente. Il codice da fornire non sarà solo quello coperto da AGPL, ma anche tutti i moduli da esso utilizzati (escluse naturalmente le librerie di sistema). Come quasi tutte le licenze, la AGPL proibisce la rimozione della licenza stessa. La Free Software Foundation raccomanda questa licenza per ogni software che sia comunemente pensato per \textbf{applicazioni web} e che in generale siano rese disponibili su una rete. La AGPL non è compatibile con la GPL 2.0 perché la sezione 13 rientra nella definizione di ``restrizioni aggiuntive'' fornita dalla vecchia versione della GPL. È però pienamente compatibile con la GPL 3.0, grazie a una sezione appositamente inserita in essa.
+
+\subsection{Mozilla Public License}
+
+Le licenze \textbf{semi-copyleft} sono a un livello di mezzo, cercano di garantire l'esistenza di una \textbf{base comune del codice}, che è gestito da tutta la comunità, ma allo stesso tempo di permettere un'integrazione con codice proprietario. Il problema è nato quando Netscape ha reso pubblico il codice del proprio browser, perchè chiaramente loro non potevano permettersi di rilasciare codice sotto GPL, loro non possedevano tutto il codice che era incorporato dentro Netscape ma aveva parti proprietarie integrate, ed erano sezioni importanti che non potevano essere riscritte da zero. Per ovviare a questo problema hanno inventato l'idea di utilizzare restrizioni di tipo GPL applicate però \textbf{file per file}, le cui modifiche dovevano essere rilasciate sotto licenza libera. Allo stesso tempo i file che non sono marcati come GPL possono comunque essere integrate nel progetto, sebbene sia codice proprietario.
+
+Originariamente questa licenza era legata appunto a Netscape ed era chiamata \textbf{NPL}. C'è una distinzione tra \textbf{sviluppatore originale} e tutta una serie di \textbf{contributori} al progetto che hanno donato il loro codice. Tutto il codice originale (iniziale) è sotto MPL, tranne ovviamente le componenti proprietarie. Ogni volta che qualcuno fa una modifica di un file sotto MPL questo resta sotto MPL. Se necessario si può integrare all'interno del progetto del \textbf{codice proprietario} senza doverlo distribuirlo sotto licenza MPL ma sotto la licenza proprietaria.
+
+Questa fondamentalmente è l'idea che ha permesso a Netscape di essere distribuito e di mantenere allo stesso tempo il codice proprietario integrato. Oltre a ciò fornisce una \textbf{licenza brevettuale} vera e propria.
+
+\subsection{Perl Artistic License}
+
+Un'altra licenza importante è la \textbf{Perl Artistic License}, la licenza legata al linguaggio \textbf{Perl}, anche se non è solo legata al linguaggio ma anche a tutte le liberie, moduli e componenti che girano attorno a Perl. È una licenza molto diffusa, in quanto esistono molti siti che si appoggiano ancora al linguaggio Perl. È un linguaggio sicuramente datato ma ancora molto utilizzato dagli sviluppatori. Questa licenza nasce dall'esigenza di permettere a chi crea software di mantenere un controllo ``artistico'' sul programma, ovvero si vuole mantenere un controllo su come il programma viene sviluppato potendo incorporare tutte le modifiche e le aggiunte che vengono ritenute interessanti e allo stesso tempo evitare che ci sia un'\textit{appiattimento} dello sviluppo, cioè il fatto che chi sviluppava fosse solamente il programmatore centrale. Si vuole incentivare lo sviluppo di altre applicazioni, di altri moduli e allo stesso tempo far sì queste modifiche siano incorporabili nel progetto di partenza. 
+
+È tra le licenze più diffuse dopo GPL, LGPL e BSD.
+
+\subsubsection{Concetti base}
+
+Esiste una \textbf{modified version} e una \textbf{standard version}:
+
+\begin{itemize}
+
+\item La modified version è una versione modificata, la prendo, ci faccio delle modifiche e la rilascio;
+\item Diventa standard version quando faccio delle modifiche che vengono rilasciate sotto il \textbf{public domain}, ovvero quando è rilasciata sotto una licenza tale che possa essere \textit{presa} dal programmatore originale.
+
+\end{itemize}
+
+La standard version corrisponde dunque o alla versione originale oppure a qualcuna che differisca dalla versione originale per alcune modifiche che sono accessibili sotto licenza permissiva e che siano di dominio pubblico.
+
+C'è una distinzione tra \textbf{copyright holder}, che è colui che ha rilasciato il codice originale, e gli \textbf{altri sviluppatori} che hanno contribuito con delle modifiche. Un'altra nozione importante è quella di \textbf{codice liberamente disponibile} che corrisponde a software che è:
+
+\begin{itemize}
+
+\item \textbf{Gratuito}, nessun pagamento in sé;
+\item Eventuale \textbf{pagamento per la consegna};
+\item Chi riceva il codice deve anche poterlo redistribuire sotto gli stessi termini con i quali lo ha ricevuto. 
+
+\end{itemize}
+
+\subsubsection{Redistribuzione di sorgenti}
+
+Un primo semplice modo di redistribuire il codice è una \textbf{redistribuzione inalterata}, prendo il mio pacchetto e lo do a qualcuno. Nel fare ciò devo anche comprendere la licenza. In secondo luogo è possibile tranquillamente prendere il prodotto e incorporarlo sotto \textbf{public domain} o come proprietà dell'autore originale. 
+
+Diverso è se qualcuno vuole redistribuire i \textbf{sorgenti modificati}. In questo caso è sempre necessario scrivere la licenza e \textbf{cosa è stato fatto} sui singoli file modificati. È necessario dunque modificare la documentazione Inoltre è necessario:
+
+\begin{itemize}
+
+\item Avvisare le modifiche nel public domain o liberamente disponibili;
+\item Avvisare sull'uso limitato alla propria applicazione;
+\item Avvisare la \textbf{rinominazione} dei file;
+\item Avvisare sui diversi accordi con l'autore.
+
+\end{itemize}
+
+\subsubsection{Redistribuzione di binari}
+
+È possibile redistribuire non solo i sorgenti ma anche i \textbf{file binari}, ma a questo punto devo:
+
+\begin{itemize}
+
+\item Redistribuire anche i \textbf{file originali} con le istruzioni su come prelevare la versione standard;
+\item Distribuzione anche dei sorgenti modificati;
+\item Rinominazione degli eseguibili e documentazione delle differenze;
+\item Altri accordi con l'autore.
+
+\end{itemize}
+
+\subsubsection{Uso commerciale}
+
+Esistono una serie di restrizioni particolari quando si utilizza il software per \textbf{uso commerciale}, e questo mette la PAL \textit{in bilico} per essere considerata una licenza libera. La Open Source Definition ha delle eccezioni/clausole per far sì che la Perl Artistic License venga considerata licenza Open Source. Vediamo quali sono le restrizioni:
+
+\begin{itemize}
+
+\item Vendita del software vietata;
+\item Possibile pagamento per il supporto;
+\item Possibile integrazione del proprio software in superpacchetti commerciali;
+\item L'uso del software dev'essere isolato dall'utente.
+
+\end{itemize}
+
+\subsection{Mappa di compatibilità}
+
+Vediamo infine quali licenze sono compatibili con altre:
+
+\begin{figure}[htpd]
+\centering
+\includegraphics[width=100mm]{images/license-compatibility.png}
+\caption{Mappa di compatibilità delle licenze}
+\end{figure}
