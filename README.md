@@ -16,6 +16,12 @@ Il documento finale è stato realizzato unendo diversi capitolo scritti in LaTeX
 
 `make document`
 
+Step by step on Windows:
+* Scaricare MiKTeX da [qui](http://miktex.org/portable)
+* Dal package manager installare i pacchetti indicati sotto ( [qui](http://docs.miktex.org/manual/pkgmgt.html) una breve guida per usare il package manager)
+* Lanciare TeXworks, per compilare il file TecnologieOpenSource.tex un click sulla freccia verde, accettare l'installazione di ulteriori altri pacchetti, fine.
+
+
 Se per qualche ragione non si riuscisse a compilare i sorgenti contattatemi di persona per avere il pdf già compilato. In ogni caso, appena raggiunta una major release, il documento sarà pubblicato su un sito di scambio.
 
 Pacchetti LaTeX necessari
