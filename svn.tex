@@ -1,0 +1,119 @@
+\section{SVN}
+
+\subsection*{Materiale di riferimento}
+
+\begin{itemize}
+
+\item \textbf{Version Control with Subversion} Rilasciato sotto licenza CC 
+all'indirizzo:
+ \url{http://svnbook.red-bean.com/};
+\item \textbf{Introduzione a git} - Luca De Franceschi 
+
+\url{https://prezi.com/ayb1s8iahdi3/introduzione-a-git}
+ \item \textbf{Pro Git} \url{https://git-scm.com/book/it/v1/}
+\item \textbf{Pragmatic Version Control using Subversion} - Mike Mason 
+
+\url{https://asudev.jira.com/wiki/download/attachments/49419503/Pragmatic_Version_Control_using_Subversion.pdf}.
+
+\end{itemize}
+
+\subsection{Version Control System}
+Il controllo di versione è un sistema che registra, nel tempo, i cambiamenti di uno o più file, così da poter richiamare una specifica versione in un secondo momento. Qualsiasi file di un computer può essere posto sotto controllo di versione.
+
+Un Sistema per il Controllo di Versione (Version Control System - VCS)  permette di ripristinare i file ad una versione precedente, ripristinare l'intero progetto a uno stato precedente, revisionare le modifiche fatte nel tempo, vedere chi ha cambiato qualcosa che può aver causato un problema, chi ha introdotto un problema e quando, riprtistinare il tutto in caso di problemi e molto altro ancora. 
+
+I sistemi di controllo di versione si dividono in varie tipologie: 
+\begin{itemize}
+\item \textbf{Locali} Molte persone gestiscono le diverse versioni copiando i file in un'altra directory, questo semplice approccio è semplice, ma soggetto a frequenti errori. 
+
+I VCS locali hanno un database semplice che mantiene tutti i cambiamenti dei file sotto controllo di revisione. Uno dei più famosi VCS locali è rcs che  funziona salvando sul disco una serie di patch (ovvero le differenze tra i file) tra una versione e l'altra, in un formato specifico; può quindi ricreare lo stato di qualsiasi file in qualsiasi momento determinato momento, aggiungendo le varie patch.
+
+\item \textbf{Centralizzati} Affrontano il problema del collaborare con altri sviluppatori su altri sistemi. \textit{Subversion (SVN)} e \textit{Perforce}, hanno un unico server che contiene tutte le versioni dei file e gli utenti scaricano i file dal server centrale. Questo è stato lo standard del controllo di versione per molti anni.
+
+\textbf{Pro:} 
+\begin{itemize}
+\item Chiunque sa, cosa stia facendo un'altra persona del progetto. \item Gli amministratori hanno un controllo preciso sugli utenti
+\end{itemize}
+
+\textbf{Contro:} 
+In caso il server sia offline non è possibile lavorare, se il server centrale viene danneggiato e non c'è backup si perde tutto.
+
+\item \textbf{Distribuiti} Es. \textit{git}, \textit{Mercurial}, \textit{Bazaar}, \textit{Darcs}. I client locali non solo controllano lo snapshot (una panoramica completa dello stato del repository) più recente dei file, ma fanno una copia completa del repository. In questo modo se un server morisse il repository di un qualsiasi client può essere copiato sul server per ripristinarlo. Ogni checkout è un backup completo di tutti i dati.
+\end{itemize}
+
+\subsection{SVN: I primi passi}
+\subsubsection{Terminologia}
+\begin{itemize}
+\item \textbf{Repository} E' dove i file sono memorizzati, spesso su un server o in locale. Talvolta è chiamato anche depot (ad esempio in Perforce). Un repository può contenere uno o più progetti.
+
+\item \textbf{Working copy} La directory di lavoro locale.
+
+\item \textbf{Commit}
+Un commit (o, più raramente, submit) si effettua quando si copiano le modifiche fatte su file locali nella directory del repository (il software di controllo versione controlla quali file sono stati modificati dall'ultima sincronizzazione).
+
+\item \textbf{Modifica}
+Una modifica (change) rappresenta una specifica modifica ad un documento sottoposto al VCS. La granularità delle modifiche considerate come cambiamenti varia tra i sistemi di controllo versione.
+
+\item \textbf{Change List}
+Su molti sistemi di controllo versione con commit di modifiche multiple atomiche, una changelist identifica un insieme di changes fatti in un singolo commit.
+
+\item \textbf{Checkout}
+Un check-out (o checkout o co) effettua una copia di lavoro dal repository (può essere visto come l'operazione inversa dell'importazione).
+
+\item \textbf{Update}
+Un update (o sync) copia le modifiche fatte sul repository nella propria directory di lavoro (può essere visto come l'operazione inversa del commit).
+
+\item \textbf{Merge}
+Un merge o integrazione unisce modifiche concorrenti in una revisione unificata.
+
+\item \textbf{Revisione}
+Una revisione o versione è una versione in una catena di modifiche.
+
+\item \textbf{Import}
+Il termine import è usato per descrivere la copiatura dell'intero albero di directory locale sul repository.
+
+\item \textbf{Export}
+Un export è simile ad un check-out eccetto il fatto che crea un albero di directory vuoto senza metadati di controllo versione (spesso è usato precedentemente alla pubblicazione dei contenuti).
+
+\item \textbf{Conflitto}
+Un conflitto si presenta quando diversi soggetti fanno modifiche in contemporanea allo stesso documento non vedendo l'uno le modifiche che sta apportando l'altro e che potrebbero sovrapporsi. Non essendo il software abbastanza intelligente da decidere quale tra le modifiche è quella 'corretta', si richiede ad un utente di risolvere il conflitto.
+
+\item \textbf{Risolvere}
+L'intervento di un utente per la risoluzione di un conflitto tra modifiche differenti di uno stesso documento.
+\end{itemize}
+
+\subsubsection{Installare SVN}
+E' possibile installare agevolmente SVN su tutti i sistemi operativi più diffusi:
+
+\begin{itemize}
+\item \textbf{Windows}: Il miglior pacchetto comprensivo di gui è TortoiseSVN scaricabile al link \url{http://tortoisesvn.net/downloads.html}
+\item \textbf{Linux}: Basta aprire un terminale e dare il comando adatto 
+\begin{itemize}
+\item Ubuntu \textit{sudo apt-get install subversion} 
+\item Fedora \textit{sudo dnf install subversion} 
+\item openSUSE \textit{sudo zypper install subversion} 
+\end{itemize}
+\item Mac: \url{https://subversion.apache.org/packages.html#osx}
+\end{itemize}
+
+\subsection{Repositories}
+\subsection{Locking}
+\subsubsection{Il problema}
+\subsubsection{La soluzione lock - modify - unlock}
+\subsubsection{La soluzione copy - modify - merge}
+\subsection{Struttura di un repository}
+\subsection{Valori simbolici di revisione}
+\subsection{Ciclo fondamentale}
+\subsection{Revisioni miste}
+\subsection{Popolazione del repository}
+\subsection{Creazione di un repository}
+\subsection{Manipolazione del repository manualmente}
+\subsection{Changelist}
+\subsection{Controllo delle proprie modifiche}
+\subsection{Usiamo diff}
+\subsection{Annulliamo le nostre modifiche}
+\subsection{Branches}
+\subsection{Tags}
+\subsection{Esempi}
+
+%\section{git}
