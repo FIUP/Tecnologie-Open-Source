@@ -19,10 +19,10 @@ Non è ancora stato istituito un'insieme di etichette per le issue ma chiunque v
 * L'ultimo degli hackers;
 * Il movimento open-source;
 * Licenze software
+* Open Content;
 
 ## Da sviluppare
 
-* Open Content;
 * RDF;
 * SVN.
 
@@ -30,11 +30,11 @@ Non è ancora stato istituito un'insieme di etichette per le issue ma chiunque v
 
 Il documento finale è stato realizzato unendo diversi capitolo scritti in LaTeX. Per ottenere il pdf è necessario dotarsi di un compilatore LaTeX con i pacchetti indicati sotto. 
 
-Il PDF ottenuto, eventuali stampe e altre opere derivate da questo sorgente sono da intendersi come rilasciate sotto licenza CC-BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
+[Licenza:](images/cc_by.png) Il PDF ottenuto, eventuali stampe e altre opere derivate da questo sorgente sono da intendersi come rilasciate sotto licenza CC-BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
 
 ### Linux
 
-Per comodità ho scritto una regola nel Makefile per la compilazione. Vi basta, da terminale, clonare il repository, accedere alla cartella e avviare il Makefile digitando:
+Per comodità è stata scritta una regola nel Makefile per la compilazione. Vi basta, da terminale, clonare il repository, accedere alla cartella e avviare il Makefile digitando:
 
 `make document`
 
@@ -69,7 +69,7 @@ Allo stato attuale è risultato necessario utilizzare i seguenti pacchetti:
 ## Autori
 
 * Luca De Franceschi - <luca.defranceschi.91@gmail.com>;
-* Federico Busetto - <fedsib@hotmail.it>
+* Federico Silvio Busetto - <fedsib@hotmail.it>
 
 ## Ulteriori informazioni
 
