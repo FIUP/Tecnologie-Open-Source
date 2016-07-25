@@ -30,7 +30,7 @@ Non è ancora stato istituito un'insieme di etichette per le issue ma chiunque v
 
 Il documento finale è stato realizzato unendo diversi capitolo scritti in LaTeX. Per ottenere il pdf è necessario dotarsi di un compilatore LaTeX con i pacchetti indicati sotto. 
 
-[Licenza:](images/cc_by.png) Il PDF ottenuto, eventuali stampe e altre opere derivate da questo sorgente sono da intendersi come rilasciate sotto licenza CC-BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
+(images/cc_by.png) Il PDF ottenuto, eventuali stampe e altre opere derivate da questo sorgente sono da intendersi come rilasciate sotto licenza CC-BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
 
 ### Linux
 
@@ -58,6 +58,7 @@ Allo stato attuale è risultato necessario utilizzare i seguenti pacchetti:
 * `tocloft`;
 * `appendix`;
 * `graphicx`;
+* `wrapfig`;
 * `xcolor`;
 * `eurosym`;
 * `listings`;
