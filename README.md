@@ -1,12 +1,11 @@
 # [![FIUP](https://avatars2.githubusercontent.com/u/8012686?v=3&s=150)](https://github.com/orgs/FIUP/people) Tecnologie Open Source
-======================
 
 Questo repository conterrà tutti gli appunti relativi al corso di Tecnologie open-source frequentato all'università di Padova e tenuto dal Professor Francesco Tapparo.
 
 Gli appunti sono stati realizzati in LaTeX e sono il prodotto dell'unione degli appunti presi a lezione e la trascrizione delle registrazioni nell'A.A. 2013/2014. 
 Il contenuto degli appunti potrebbe non coprire eventuali aspetti ed argomenti tenuti negli anni accademici successivi, Il registro utilizzato è simile a quello tenuto a lezione.
 
-Si invita chiunque volesse contribuire con correzioni, incrementi o proposte di miglioramento a consultare il file [CONTRIBUTING.md](https://github.com/FIUP/Tecnologie-Open-Source/blob/master/docs/CONTRIBUTING.md) e richiedere di essere inserito tra i collaboratori.
+Si invita chiunque volesse contribuire con correzioni, incrementi o proposte di miglioramento a consultare il file [CONTRIBUTING.md](/docs/CONTRIBUTING.md) e richiedere di essere inserito tra i collaboratori.
 
 ## Argomenti affrontati
 
