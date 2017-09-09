@@ -1,4 +1,4 @@
-# [![FIUP](https://avatars2.githubusercontent.com/u/8012686?v=3&s=150)](https://github.com/orgs/FIUP/people) Getting_Started
+# [![FIUP](https://avatars2.githubusercontent.com/u/8012686?v=3&s=150)](https://github.com/orgs/FIUP/people) Tecnologie Open Source
 
 Open Source Tecnologies Notes. 
 
@@ -9,8 +9,6 @@ First of all respect everyone, if you want to contribute  you must respect our [
 Here you can find all the [guidelines to contribute in FIUP related projects](https://github.com/FIUP/Getting_Started/blob/master/CONTRIBUTING.md) (in italian).
 
 ### The easy steps to contribute to this repository
-
-Everyone can help our organization to be even better.
 
 1. Fork this repository in Github, by clicking the "Fork" button in the topright corner. 
 2. Clone this repository (the better way is using [SSH](https://help.github.com/articles/connecting-to-github-with-ssh/)) with the command `git clone link_del_repository`.
