@@ -1,15 +1,11 @@
-Tecnologie Open Source
-======================
+# [![FIUP](https://avatars2.githubusercontent.com/u/8012686?v=3&s=150)](https://github.com/orgs/FIUP/people) Tecnologie Open Source
 
 Questo repository conterrà tutti gli appunti relativi al corso di Tecnologie open-source frequentato all'università di Padova e tenuto dal Professor Francesco Tapparo.
 
 Gli appunti sono stati realizzati in LaTeX e sono il prodotto dell'unione degli appunti presi a lezione e la trascrizione delle registrazioni nell'A.A. 2013/2014. 
 Il contenuto degli appunti potrebbe non coprire eventuali aspetti ed argomenti tenuti negli anni accademici successivi, Il registro utilizzato è simile a quello tenuto a lezione.
 
-
-Si invita chiunque volesse contribuire con correzioni, incrementi o proposte di miglioramento a scrivere personalmente a uno dei contributori del progetto. In alternativa si può forkare il repository ed eseguire una pull request o richiedere di essere inserito tra i collaboratori.
-
-Non è ancora stato istituito un'insieme di etichette per le issue ma chiunque volesse aprirne una farebbe solo che piacere.
+Si invita chiunque volesse contribuire con correzioni, incrementi o proposte di miglioramento a consultare il file [CONTRIBUTING.md](/docs/CONTRIBUTING.md) e richiedere di essere inserito tra i collaboratori.
 
 ## Argomenti affrontati
 
@@ -30,7 +26,7 @@ Non è ancora stato istituito un'insieme di etichette per le issue ma chiunque v
 
 Il documento finale è stato realizzato unendo diversi capitolo scritti in LaTeX. Per ottenere il pdf è necessario dotarsi di un compilatore LaTeX con i pacchetti indicati sotto. 
 
-(images/cc_by.png) Il PDF ottenuto, eventuali stampe e altre opere derivate da questo sorgente sono da intendersi come rilasciate sotto licenza CC-BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
+(images/cc_by.png) Il PDF ottenuto, eventuali stampe e altre opere derivate da questo sorgente sono da intendersi come rilasciate sotto licenza [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ### Linux
 
@@ -69,8 +65,8 @@ Allo stato attuale è risultato necessario utilizzare i seguenti pacchetti:
 
 ## Autori
 
-* Luca De Franceschi - <luca.defranceschi.91@gmail.com>;
-* Federico Silvio Busetto - <fedsib@hotmail.it>
+* [Luca De Franceschi](mailto:luca.defranceschi.91@gmail.com)
+* [Federico Silvio Busetto](mailto:fedsib@hotmail.it)
 
 ## Ulteriori informazioni
 
